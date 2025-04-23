@@ -317,8 +317,9 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+  grid-auto-flow: dense;
 }
 
 
@@ -383,4 +384,128 @@ body {
   align-items: center;
   gap: 5px;
   opacity: 0.9;
+}
+
+.card {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.card.wide {
+  grid-column: span 3;
+}
+
+/* Tarjeta que ocupa 2 columnas y 2 filas (vertical grande) */
+.card.tall {
+  grid-row: span 2;
+}
+
+/* Tarjeta que ocupa toda la fila */
+.card.full {
+  grid-column: span 6;
+}
+
+
+/*Regalos gratis*/
+.gift-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.gift-section {
+  background-color: white;
+  padding: 20px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 40px 0 20px 0; 
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/*Regalos card*/
+
+.gift-carousel{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gift-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+}
+
+.gift-carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+.gift-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 280px;
+  height: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.gift-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gift-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.gift-text {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gift-date {
+  font-size: 13px;
+  color: #ddd;
+}
+
+
+/* Flechas */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-arrow.left {
+  left: -10px;
+}
+
+.carousel-arrow.right {
+  right: -10px;
 }

@@ -54,3 +54,16 @@ toggleSwitch.addEventListener('click', () => {
   toggleSwitch.classList.toggle('active');
 });
 
+/*Flechas*/
+
+const carousel = document.getElementById('gift-carousel');
+const leftBtn = document.getElementById('arrow-left');
+const rightBtn = document.getElementById('arrow-right');
+
+leftBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+});
