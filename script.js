@@ -56,14 +56,26 @@ toggleSwitch.addEventListener('click', () => {
 
 /*Flechas*/
 
-const carousel = document.getElementById('gift-carousel');
-const leftBtn = document.getElementById('arrow-left');
-const rightBtn = document.getElementById('arrow-right');
+document.querySelectorAll('.gift-carousel').forEach((carousel, index) => {
+  const leftBtn = carousel.parentElement.querySelector('.carousel-arrow.left');
+  const rightBtn = carousel.parentElement.querySelector('.carousel-arrow.right');
 
-leftBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: -300, behavior: 'smooth' });
+  if (leftBtn && rightBtn) {
+    leftBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  }
 });
 
-rightBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+
+const steamCarousel = document.getElementById('steam-carousel');
+document.getElementById('steam-left').addEventListener('click', () => {
+  steamCarousel.scrollBy({ left: -300, behavior: 'smooth' });
+});
+document.getElementById('steam-right').addEventListener('click', () => {
+  steamCarousel.scrollBy({ left: 300, behavior: 'smooth' });
 });
