@@ -99,10 +99,8 @@ body {
 
 /* Contenedor del buscador oculto al inicio */
 .search-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 100%;
   background-color: white;
   padding: 10px 20px;
   z-index: 1000;
