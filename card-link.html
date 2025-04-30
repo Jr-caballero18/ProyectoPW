@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjSoD0LLH_jN2J05MUQnxgrPKOMbzBmw2Fg&s"
+                        alt="Logo" class="logo-img">
+                    <span class="brand-name">VGTimes</span>
+                </a>
+
+
+
+                <button class="navbar-toggler" type="button" id="menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-noticias">Noticias <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-noticias">
+                                <li><a class="dropdown-item" href="all_news.html">Todas las noticias</a></li>
+                                <li><a class="dropdown-item" href="news-of-videogames.html">Noticias de videojuegos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="news-of-hardware.html">Hardware y tecnología</a></li>
+                                <li><a class="dropdown-item" href="news-of-tv.html">Películas y series de televisión</a>
+                                </li>
+                                <li><a class="dropdown-item" href="news-of-video.html">Video</a></li>
+                                <li><a class="dropdown-item" href="news-of-freegames.html">Juegos gratis y regalos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="news-of-sales.html">Ventas, promociones y
+                                        descuentos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Pruebas</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-articulos">Artículos <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-articulos">
+                                <li><a class="dropdown-item" href="#">Todos los articulos</a></li>
+                                <li><a class="dropdown-item" href="game-reviews.html">Reseñas de juegos</a></li>
+                                <li><a class="dropdown-item" href="#">Avance de juegos</a></li>
+                                <li><a class="dropdown-item" href="tv-reviews.html">Reseñas de peliculas y series de
+                                        television</a>
+                                </li>
+                                <li><a class="dropdown-item" href="tecnology-reviews.html">Reseñas de tecnologia y
+                                        hardware</a></li>
+                                <li><a class="dropdown-item" href="#">Nuestras entrevistas</a></li>
+                                <li><a class="dropdown-item" href="rankings-games.html">Lo mejor y lo mejor</a></li>
+                                <li><a class="dropdown-item" href="#">Cosplay</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-misterios">Misterios <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-misterios">
+                                <li><a class="dropdown-item" href="#">Guias</a></li>
+                                <li><a class="dropdown-item" href="#">Huevos de Pascua y secretos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-juegos">Juegos <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-juegos">
+                                <li><a class="dropdown-item" href="#">Calendario y fechas de lanzamiento</a></li>
+                                <li><a class="dropdown-item" href="#">Popular esta semana</a></li>
+                                <li><a class="dropdown-item" href="#">Los juegos mas esperados</a></li>
+                                <li><a class="dropdown-item" href="#">Nuevas capturas de pantalla</a></li>
+                                <li><a class="dropdown-item" href="#">Recopilaciones de juegos</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-archivos">Archivos <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-archivos">
+                                <li><a class="dropdown-item" href="#">Todos los archivos del juego</a></li>
+                                <li><a class="dropdown-item" href="#">Entrenadores de juego</a></li>
+                                <li><a class="dropdown-item" href="#">Partidas guardadas</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="nav-item"><a class="nav-link" href="forum.html">Foro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taberna</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdown-obsequios">Obsequios <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu-obsequios">
+                                <li><a class="dropdown-item" href="#">Noticias de regalos</a></li>
+                                <li><a class="dropdown-item" href="#">Ventas, promociones y descuentos</a></li>
+                                <li><a class="dropdown-item" href="#">Busquedas de descuentos-agregador</a></li>
+                                <li><a class="dropdown-item" href="#">Nuevos descuentos en Steam</a></li>
+                                <li><a class="dropdown-item" href="#">Descuentos en Epic Games Store</a></li>
+                                <li><a class="dropdown-item" href="#">Regalos clave</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+
+                    <div class="d-flex align-items-center nav-icons position-relative">
+                        <button id="search-toggle" class="btn btn-link p-0 me-3">
+                            <i class="bi bi-search fs-5"></i>
+                        </button>
+                        <div class="search-container" id="search-container">
+                            <input type="text" id="search-input"
+                                placeholder="Busca juegos, descuentos, artículos, usuarios...">
+                            <span id="close-btn">&times;</span>
+                        </div>
+                        <span class="me-2">ES</span>
+                        <i class="bi bi-box-arrow-in-right"></i>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="centered-div">
+        <div class="game-bar">
+
+            <div>
+                <i></i> Juegos de la semana
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> BeamNG.drive
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> S.T.A.L.K.E.R. 2: Heart of Chornobyl
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> GTA 5
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> My Summer Car
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> Plants vs. Zombies
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> Zenless Zone
+            </div>
+            <div class="game-item">
+                <i class="bi bi-controller"></i> Mas Juegos
+            </div>
+        </div> <!--Div de los juegos-->
+
+
+        <div class="action-bar d-flex justify-content-between align-items-center mb-4">
+            <!-- Botón de notificación -->
+            <div class="notification position-relative">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <span class="notification-dot"></span>
+            </div>
+
+
+            <!-- Botón Create con menú desplegable -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="createDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil"></i> Crear
+                </button>
+                <ul class="dropdown-menu" id="createMenu" aria-labelledby="createDropdown">
+                    <li><a class="dropdown-item" href="#">Noticias o articulos</a></li>
+                    <li><a class="dropdown-item" href="#">Prueba</a></li>
+                    <li><a class="dropdown-item" href="#">Archivo</a></li>
+                    <li><a class="dropdown-item" href="#">Tema del foro</a></li>
+                </ul>
+            </div>
+
+
+            <span class="action-text">
+                <i class="bi bi-file-earmark-text"></i> TES 4: Oblivion Remastered Now Available on PC & Consoles
+            </span>
+
+
+            <div class="toggle-switch">
+                <span>Vista de la pagina principal</span>
+                <div class="switch" id="toggle-switch">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="breadcrumb-bar">
+            <div class="breadcrumb">
+                <i class="bi bi-house-door"></i>
+                <span class="divider">›</span>
+                <span>Articulos</span>
+                <span class="divider">›</span>
+                <span> Bethesda ha lanzado una remasterización de The Elder Scrolls 4: Oblivion. Pero ¿merece la pena
+                    comprar este clásico remasterizado?</span>
+            </div>
+        </div>
+
+        <div class="featured-article-card">
+            <img class="featured-img"
+                src="https://files.vgtimes.com/posts/2025-04/bethesda-has-released-a-remaster-of-the-elder-scrolls-4-oblivion.-but-is-the-remastered-classic-worth-buying-124763.webp?1745339810"
+                alt="Oblivion">
+            <div class="featured-overlay">
+                <h2 class="featured-title">
+                    Bethesda ha lanzado una remasterización de The Elder Scrolls 4: Oblivion. Pero ¿merece la pena
+                    comprar este clásico remasterizado?
+                </h2>
+                <div class="featured-bottom-bar d-flex justify-content-between align-items-center">
+                    <div class="featured-tags">
+                        <i class="bi bi-clock"></i>
+                        <span class="time">22 de abril de 2025, 19:36</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-content-block">
+            <p class="featured-paragraph">
+                Los rumores se confirmaron: Bethesda realizó una presentación donde anunció el lanzamiento de la
+                remasterización de Oblivion . El juego se ha transformado radicalmente y ha empezado a parecer un
+                proyecto moderno. Pero ¿tiene sentido comprarlo en 2025? Encontrarás la respuesta en nuestro artículo.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wFJ3PZuAjK4?si=KYf2ww-84tKMexfR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="featured-article-text">
+                <h3>En pocas palabras sobre The Elder Scrolls 4: Oblivion</h3>
+                <p>
+                    La cuarta entrega de la serie Elder Scrolls no logró alcanzar la popularidad de <span
+                        class="highlight">Morrowind</span> y <span class="highlight">Skyrim</span>.
+                    La versión de lanzamiento resultó controvertida: fue criticada por su pequeño mundo abierto, la
+                    cantidad de misiones aburridas y la excesiva dificultad para subir de nivel automáticamente, ya que
+                    todos los enemigos subían de nivel al mismo tiempo que el jugador. Este juego también dio origen al
+                    meme sobre las armaduras de caballo de pago. En <span class="highlight">2006</span>, este tipo de
+                    DLC parecía inusual y extraño, especialmente en proyectos AAA que se vendían a precio completo.
+                </p>
+                <p>
+                    A pesar de todas sus desventajas, Oblivion es una entrega numerada y completa de <span
+                        class="highlight">The Elder Scrolls</span>, con todas las características distintivas de la
+                    serie: libertad de acción, una jugabilidad reflexiva y variable, así como una interesante historia
+                    que se desarrolla a medida que avanzas. Por otro lado, cabe destacar el complemento <span
+                        class="highlight">Shivering Isles</span>, donde nos encontramos en el reino del príncipe
+                    daédrico Sheogorath. Se trata de una experiencia de juego realmente vívida e inusual, por la que
+                    merece la pena adquirir la edición completa del juego.
+                </p>
+            </div>
+
+            <img src="https://files.vgtimes.com/posts/2025-04/1745338133_glm8qashb82yxpuhpnuwoc_problembo_.webp"
+                alt="Oblivion Remastered" class="article-image">
+
+            <div class="poll-box">
+                <h4>La mejor parte de la serie Elder Scrolls</h4>
+
+                <form class="poll-form">
+                    <label><input type="radio" name="poll" value="arena"> Arena</label>
+                    <label><input type="radio" name="poll" value="daggerfall"> Caída de dagas</label>
+                    <label><input type="radio" name="poll" value="morrowind"> Morrowind</label>
+                    <label><input type="radio" name="poll" value="oblivion"> Olvido</label>
+                    <label><input type="radio" name="poll" value="skyrim"> Skyrim</label>
+                    <label><input type="radio" name="poll" value="no_me_gusta"> No me gusta The Elder Scrolls</label>
+                    <label><input type="radio" name="poll" value="no_he_jugado"> No he jugado</label>
+
+                    <div class="poll-actions">
+                        <button type="submit" class="vote-btn">Votar</button>
+                        <a href="#" class="results-link">Resultados</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="remaster-info">
+                <h3>¿Qué es el remaster de Oblivion?</h3>
+                <p>
+                    Gracias al nuevo Unreal Engine 5, los gráficos lucen mucho mejor. Además, los desarrolladores
+                    aseguran que todos los detalles del entorno se recrearon manualmente, sin usar redes neuronales,
+                    como en
+                    <span class="highlight">GTA: The Trilogy — The Definitive Edition</span>.
+                </p>
+                <p>
+                    Sin embargo, los cambios afectaron no solo la apariencia del juego, sino también la jugabilidad. Por
+                    ejemplo, los oponentes comenzaron a reaccionar de forma más activa a tus golpes y a los impactos con
+                    armas de largo alcance.
+                    Si antes Oblivion estaba optimizado para la vista en primera persona, y la vista trasera no parecía
+                    muy cómoda, ahora se puede jugar cómodamente con una cámara sobre el hombro.
+                    Además, la velocidad de sprint y natación del personaje principal ha aumentado significativamente,
+                    lo que le permitirá moverse más rápido y abandonar la batalla fácilmente si es necesario.
+                </p>
+            </div>
+
+            <img src="https://files.vgtimes.com/posts/2025-04/thumbs/1745338116_oblivionremaster1_problembo_.webp"
+                alt="Oblivion Remastered" class="article-image">
+
+            <div class="remaster-info">
+                <p>
+                    También cabe destacar que los PNJ ahora tienen diálogos más singulares: las frases se repetirán con
+                    mucha menos frecuencia que antes. Y algunos minijuegos, como el de abrir cerraduras, se han
+                    rediseñado para adaptarse a los estándares modernos.
+                </p>
+                <p>
+                    La versión Deluxe de la remasterización incluye los complementos <span class="highlight">Caballeros
+                        de los Nueve</span>.
+                    y las Islas Temblorosas, así como contenido adicional como armaduras y armas. La edición regular se
+                    vende sin contenido descargable. El juego se lanzó para PC, PlayStation 5 y Xbox Series. La
+                    remasterización está disponible completamente gratis para los suscriptores de Game Pass.
+                </p>
+            </div>
+
+
+            <div class="remaster-info">
+                <img src="https://files.vgtimes.com/posts/2025-04/thumbs/1745338105_kksfwp2gyyg2fp6xzkbuyvco0purbaazsoqhgicx_problembo_.webp"
+                    alt="Oblivion Remastered" class="article-image">
+                <p>
+                    Gracias a la calidad de los gráficos, parece que no se trata de un remaster, sino de un remake
+                    completo.
+                </p>
+            </div>
+
+            <div class="remaster-info">
+                <h3>¿Vale la pena comprar la reedición de The Elder Scrolls 4?</h3>
+                <p>
+                    Si te encanta The Elder Scrolls, estás esperando <span class="highlight">la sexta parte</span>
+                    o recuerdas con nostalgia los tiempos en que jugaste a Oblivion, te recomendamos encarecidamente que
+                    pruebes la remasterización. Los fans de los juegos de rol que se perdieron la cuarta entrega de The
+                    Elder Scrolls también pueden probarla. Ten en cuenta que una partida completa puede llevar hasta
+                    cien horas.
+                </p>
+                <p>
+                    Si por alguna razón no te convencen los mundos abiertos de Bethesda ni su enfoque argumental, la
+                    reedición de Oblivion no cambiará tu opinión sobre la serie. En ese caso, puedes pasarlo por alto
+                    sin problema.
+                </p>
+                <p>
+                    ¿Planeas jugar la remasterización de The Elder Scrolls 4: Oblivion? ¿O estás cansado de los juegos
+                    de esta serie? ¡Comparte tu opinión en los comentarios!</p>
+            </div>
+
+            <div class="poll-box">
+                <h4>¿Jugarás al remaster de The Elder Scrolls 4: Oblivion?</h4>
+
+                <form class="poll-form">
+                    <label><input type="radio" name="poll" value="arena"> ¡Por supuesto!</label>
+                    <label><input type="radio" name="poll" value="daggerfall"> Creo que si, si tengo tiempo.</label>
+                    <label><input type="radio" name="poll" value="morrowind"> No lo se todavia.</label>
+                    <label><input type="radio" name="poll" value="oblivion"> No, no lo hare.</label>
+                    <div class="poll-actions">
+                        <button type="submit" class="vote-btn">Votar</button>
+                        <a href="#" class="results-link">Resultados</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="share-box">
+                <span class="share-label">Compartir:</span>
+                <a href="#" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="social-icon telegram"><i class="bi bi-telegram"></i></a>
+            </div>
+
+
+
+        </div>
+
+        <div class="tags-author-container">
+            <div class="tags-list">
+                <a href="#">ordenador personal</a>
+                <a href="#">Xbox Series X (Proyecto Scarlett)</a>
+                <a href="#">PS5</a>
+                <a href="#">Artículos The Elder Scrolls 5: Skyrim</a>
+                <a href="#">Artículos The Elder Scrolls 4: Oblivion</a>
+                <a href="#">Artículos Elder Scrolls 3: Morrowind</a>
+                <a href="#">Artículos</a>
+            </div>
+
+            <div class="author-card">
+                <img src="https://vgtimes.com/uploads/fotos/foto_80195.jpg?1643977595" alt="Autor"
+                    class="author-avatar">
+                <div class="author-info">
+                    <span class="author-name">Ermolaev Alexey</span>
+                    <span class="author-role">Autor de los artículos</span>
+                    <p class="author-bio">He jugado desde que tengo memoria. Trabajo en periodismo de videojuegos desde
+                        2018. Escribo...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gift-carousel">
+            <button class="carousel-arrow left" id="arrow-left"><i class="bi bi-chevron-left"></i></button>
+
+
+            <div class="gift-carousel" id="gift-carousel">
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/days-gone-and-other-games-that-deserve-a-sequel-124524.webp?1744983930"
+                        alt="Juego 1">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Days Gone y otros juegos que merecen una secuela</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> 18 de abril de 2025, 16:45</span>
+                    </div>
+                </div>
+
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2024-04/top-10-interesting-facts-about-todd-howard-105953.webp?1712244295"
+                        alt="Juego 2">
+                    <div class="gift-overlay">
+                        <p class="gift-text">TOP 10 datos interesantes sobre Todd Howard</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> 4 de abril de 2024, 18:24</span>
+                    </div>
+                </div>
+
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/steel-seed-review-a-gorgeous-sci-fi-adventure-with-an-old-school-spirit-124755.webp?1745338553"
+                        alt="Juego 3">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Reseña de Steel Seed: Una magnífica aventura de ciencia ficción con un
+                            espíritu de la vieja escuela</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> 22 de abril de 2025, 19:05</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2024-06/todd-howard-on-fallout-1-and-2-remakes-were-not-ready-to-spend-time-on-that-right-now-108929.webp?1718623029"
+                        alt="Juego 4">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Todd Howard sobre los remakes de Fallout 1 y 2: «No estamos listos para
+                            dedicarle tiempo ahora mismo»</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> 17 de junio de 2024, 14:17</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/epic-games-store-mobile-app-offers-free-copy-of-botanicula-124470.webp?1744920270"
+                        alt="Juego 5">
+                    <div class="gift-overlay">
+                        <p class="gift-text">La app de Epic Games para móviles regala una copia gratuita de Botanicula
+                        </p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/egs-gives-away-adventure-botanicula-from-the-authors-of-machinarium-for-free-124457.webp?1744906287"
+                        alt="Juego 6">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Epic Games regala Botanicula de los creadores de Machinarium</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/three-free-vr-games-land-on-steam-124380.webp?1744828458"
+                        alt="Juego 7">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Tres juegos gratis de VR llegan a Steam</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/steams-giving-away-5-free-games-one-with-over-80-positive-reviews-124332.webp?1744749893"
+                        alt="Juego 8">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Steam regala 5 juegos gratis, uno con más del 80% de reseñas positivas</p>
+                        <span class="gift-date"> <i class="bi bi-clock"></i> hace 2 días</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-arrow right" id="arrow-right"><i class="bi bi-chevron-right"></i></button>
+
+        </div>
+
+
+        <div class="comments-section">
+            <div class="comments-header">
+                <span class="comments-title">Comentarios</span>
+                <span class="comments-count">0</span>
+                <select class="comment-sort">
+                    <option>Interesante primero</option>
+                    <option>Más reciente primero</option>
+                    <option>Más antiguo primero</option>
+                </select>
+            </div>
+
+            <div class="login-message">
+                <span class="login-hint"><span class="login-link">Inicie sesión</span> para dejar comentarios.</span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid-container">
+
+            <!--Card 1-->
+            <div class="card wide">
+                <img src="https://files.vgtimes.com/posts/2025-04/bethesda-has-released-a-remaster-of-the-elder-scrolls-4-oblivion.-but-is-the-remastered-classic-worth-buying-124763.webp?1745339810"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Artículos</span>
+                        <span class="time">Hace 3 horas</span>
+                    </div>
+                    <h5 class="headline">Bethesda ha lanzado una remasterización de The Elder Scrolls 4: Oblivion...
+                    </h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Card 2-->
+            <div class="card wide">
+                <img src="https://files.vgtimes.com/posts/2025-04/intel-debuts-safe-one-click-overclocking-for-arrow-lake-cpus-124746.webp?1745334879"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Noticias</span>
+                        <span class="time">Hace 5 horas</span>
+                    </div>
+                    <h5 class="headline">Intel presenta overclocking seguro con un solo clic para CPU Arrow Lake.</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Card 3-->
+            <div class="card">
+                <img src="https://files.vgtimes.com/posts/2025-04/the-elder-scrolls-4-oblivion-remastered-now-available-on-pc-consoles-124754.webp?1745338177"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Noticias</span>
+                        <span class="time">Hace 4 horas</span>
+                    </div>
+                    <h5 class="headline">The Elder Scrolls 4: Oblivion Remastered ya disponible para PC y consolas.</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Card 4-->
+            <div class="card ">
+                <img src="https://files.vgtimes.com/posts/2025-04/steel-seed-review-a-gorgeous-sci-fi-adventure-with-an-old-school-spirit-124755.webp?1745338553"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Articulos</span>
+                        <span class="time">Hace 4 horas</span>
+                    </div>
+                    <h5 class="headline">Reseña de Steel Seed: Una magnifica aventura de ciencia ficcion con un espiritu
+                        de la vieja escuela.</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 5-->
+            <div class="card">
+                <img src="https://files.vgtimes.com/posts/2025-04/is-8-gb-no-longer-enough-how-much-vram-do-you-really-need-in-2025-124741.webp?1745333262"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Articulos</span>
+                        <span class="time">Hace 6 horas</span>
+                    </div>
+                    <h5 class="headline">¿8 GB ya no son suficientes? ¿Cuantas VRAM necesitas realmente en 2025?</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 6-->
+            <div class="card wide">
+                <img src="https://files.vgtimes.com/posts/2025-04/death-stranding-2-previews-drop-on-may-8-124734.webp?1745322382"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Noticias</span>
+                        <span class="time">Hace 9 horas</span>
+                    </div>
+                    <h5 class="headline">Los avances de Death Stranding 2 se lanzaran el 8 de mayo.</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 7-->
+            <div class="card wide">
+                <img src="https://files.vgtimes.com/posts/2025-04/the-most-thrilling-thing-in-star-wars-in-a-long-time-andor-season-2-receives-rave-reviews-124795.webp?1745382595"
+                    class="background-img" alt="Noticia">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Noticias</span>
+                        <span class="time">Hoy, 07:28 </span>
+                    </div>
+                    <h5 class="headline">«La franquicia de Star Wars más cautivadora en mucho tiempo» — La segunda
+                        temporada de Andor recibe excelentes críticas.</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Sección de regalos -->
+        <div class="gift-section">
+            <h4 class="gift-title">Regalos gratis</h4>
+        </div>
+
+
+        <div class="gift-carousel">
+            <button class="carousel-arrow left" id="arrow-left"><i class="bi bi-chevron-left"></i></button>
+
+
+            <div class="gift-carousel" id="gift-carousel">
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/five-games-now-permanently-free-on-steam-including-titles-previously-priced-at-40-and-25-124706.webp?"
+                        alt="Juego 1">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Cinco juegos ahora gratis de forma permanente en Steam, incluidos títulos
+                            que antes costaban $40 y $25.</p>
+                        <span class="gift-date"></i>hace 1 día</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/steams-got-4-new-free-games-one-with-a-96-rating-124621.webp?1745181003"
+                        alt="Juego 2">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Steam tiene 4 nuevos juegos gratis, uno con una calificación del 96%</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/prime-gaming-giving-away-7-free-games-on-epic-and-gog-124548.webp?1745011991"
+                        alt="Juego 3">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Prime Gaming regala 7 juegos gratis en Epic y GOG</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/post-apocalyptic-survival-game-dysterra-goes-free-to-play-on-steam-124479.webp?"
+                        alt="Juego 4">
+                    <div class="gift-overlay">
+                        <p class="gift-text">El juego de supervivencia postapocalíptico Dysterra se vuelve gratuito en
+                            Steam</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/epic-games-store-mobile-app-offers-free-copy-of-botanicula-124470.webp?1744920270"
+                        alt="Juego 5">
+                    <div class="gift-overlay">
+                        <p class="gift-text">La app de Epic Games para móviles regala una copia gratuita de Botanicula
+                        </p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/egs-gives-away-adventure-botanicula-from-the-authors-of-machinarium-for-free-124457.webp?1744906287"
+                        alt="Juego 6">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Epic Games regala Botanicula de los creadores de Machinarium</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/three-free-vr-games-land-on-steam-124380.webp?1744828458"
+                        alt="Juego 7">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Tres juegos gratis de VR llegan a Steam</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+                <div class="gift-card">
+                    <img src="https://files.vgtimes.com/posts/2025-04/steams-giving-away-5-free-games-one-with-over-80-positive-reviews-124332.webp?1744749893"
+                        alt="Juego 8">
+                    <div class="gift-overlay">
+                        <p class="gift-text">Steam regala 5 juegos gratis, uno con más del 80% de reseñas positivas</p>
+                        <span class="gift-date">hace 2 días</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-arrow right" id="arrow-right"><i class="bi bi-chevron-right"></i></button>
+
+        </div>
+
+        <div class="grid-container-2">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://files.vgtimes.com/posts/2025-04/gamers-react-to-oblivion-remastered-release-with-hilarious-memes-124777.webp?1745362131"
+                    class="background-img" alt="Bethesda">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Artículos</span>
+                        <span class="time">hace 1 día</span>
+                    </div>
+                    <h5 class="headline">Los jugadores reaccionan al lanzamiento de Oblivion Remastered con memes
+                        divertidos</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://files.vgtimes.com/posts/2025-04/the-elder-scrolls-4-oblivion-remastered-gets-nude-mod-124854.webp?1745433223"
+                    class="background-img" alt="Intel">
+                <div class="card-overlay">
+                    <div class="card-tags">
+                        <span class="tag">Noticias</span>
+                        <span class="time">hace 1 día</span>
+                    </div>
+                    <h5 class="headline">The Elder Scrolls 4: Oblivion Remastered recibe un mod de desnudos</h5>
+                    <div class="comment-icon">
+                        <i class="bi bi-chat-left"></i> Deja un comentario
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="show-more-container">
+            <button class="show-more-btn">Mostrar más</button>
+        </div>
+
+
+
+        <div class="steam-free-section">
+            <h3 class="steam-section-title">Juegos gratis para Steam en la ruleta de VGTimes</h3>
+
+            <div class="steam-carousel-wrapper">
+                <button class="carousel-arrow left" id="steam-left"><i class="bi bi-chevron-left"></i></button>
+
+                <div class="steam-carousel" id="steam-carousel">
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/hardspace-shipbreaker-global_e267a.jpeg"
+                            alt="Juego 1">
+                        <p class="steam-title">Espacio duro: Rompedor de barcos [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/grotto-global_b2afd.jpeg" alt="Juego 1">
+                        <p class="steam-title">Gruta [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/marvels-avengers-the-definitive-edition-global_83ced.jpeg"
+                            alt="Juego 1">
+                        <p class="steam-title">Marvel's Avengers The Definitive Edition [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/pumpkin-jack-global_a39f5.jpeg" alt="Juego 1">
+                        <p class="steam-title">Pumpkin Jack [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/robocop-rogue-city-ruuacis_fd8ab.jpeg"
+                            alt="Juego 2">
+                        <p class="steam-title">RoboCop: Rogue City [RU,UA,CIS]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/scorn-global_60c7f.jpeg" alt="Juego 3">
+                        <p class="steam-title">Scorn [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/scp-secret-files-global_dac76.jpeg"
+                            alt="Juego 4">
+                        <p class="steam-title">SCP: Secret Files [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/otxo-global_3fd74.jpeg" alt="Juego 5">
+                        <p class="steam-title">OTXO [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/ghostrunner-2-global_eb573.jpeg" alt="Juego 6">
+                        <p class="steam-title">Ghostrunner 2 [Global]</p>
+                    </div>
+
+                    <div class="steam-card">
+                        <img src="https://vgtimes.com/uploads/roulette/trail-out-global_a7e2b.jpeg" alt="Juego 7">
+                        <p class="steam-title">TRAIL OUT [Global]</p>
+                    </div>
+
+
+                </div>
+
+
+
+                <button class="carousel-arrow right" id="steam-right"><i class="bi bi-chevron-right"></i></button>
+            </div>
+
+            <footer class="footer-vgtimes">
+                <div class="footer-links">
+                    <a href="#">Reglas del sitio</a>
+                    <a href="#">Publicidad</a>
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Contactos</a>
+                </div>
+
+                <p class="footer-copy">© 2011 - 2077 VGTimes</p>
+
+                <button class="mobile-version-btn">Versión móvil</button>
+            </footer>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div> <!-- fin de div principal-->
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
